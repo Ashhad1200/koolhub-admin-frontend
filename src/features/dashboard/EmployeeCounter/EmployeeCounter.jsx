@@ -21,7 +21,6 @@ const EmployeeCounter = () => {
     date: dt.today().format(dt.formats.DateMonthYear1),
   });
 
-  // Dynamic Employee Data
   const employeeData = [
     {
       count: data?.total || 0,
@@ -69,14 +68,13 @@ const EmployeeCounter = () => {
               borderRadius: 10,
               color: "#fff",
               padding: "10px",
-              width: "100%", // Ensures it adjusts within the column
+              width: "100%",
             }}
           >
             <Space
               style={{ display: "flex", alignItems: "center" }}
               direction="horizontal"
             >
-              {/* Icon on the left */}
               <Badge
                 count={item.icon}
                 style={{
@@ -87,7 +85,7 @@ const EmployeeCounter = () => {
                   padding: "10px",
                 }}
               />
-              {/* Content */}
+
               <div style={{ marginLeft: "10px", textAlign: "left" }}>
                 <Text
                   style={{

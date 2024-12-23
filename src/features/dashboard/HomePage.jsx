@@ -10,13 +10,13 @@ const Component = () => {
   return (
     <>
       <Row gutter={[24, 24]}>
-        <Col xs={24} sm={24} md={12} lg={8} xl={8}>
+        <Col xs={24} sm={24} md={24} lg={8} xl={8}>
           <Glance />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8} xl={8}>
           <Announcements />
         </Col>
-        <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+        <Col xs={24} sm={24} md={12} lg={8} xl={8}>
         <EmployeeCounter />
         </Col>
       </Row>

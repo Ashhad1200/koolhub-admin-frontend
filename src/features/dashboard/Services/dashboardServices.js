@@ -22,17 +22,14 @@ const dashboardServices = {
     return mb.api.get(`api/student/fetchExitStudentsTracking`, query);
   },
 
-  // one pera campusID
   fetchRoomOccupancy: async (query) => {
     return mb.api.get(`api/campusManagement/fetchRoomOccupancy`, query);
   },
 
-  // 3 pera capmus Id, date from to
   totalStudentsCountCampusWise: async (query) => {
     return mb.api.get(`api/student/totalStudentsCountCampusWise`, query);
   },
 
-  // one pera campusID
   fetchCampusKeepUp: async (query) => {
     return mb.api.get(`api/KpiInfo/CampusUpKeepDashboard`, query);
   },
@@ -42,6 +39,10 @@ const dashboardServices = {
       ? `api/Student/tempEmpList/${query}`
       : `api/Student/tempEmpList`;
     return mb.api.get(queryString);
+  },
+
+  fetchFeeCount: async (query) => {
+    return mb.api.get(`api/student/feeCount`, query);
   },
 
   // delete: async (id) => {

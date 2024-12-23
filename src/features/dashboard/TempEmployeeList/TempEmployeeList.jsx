@@ -11,8 +11,6 @@ const TempEmployeeList = () => {
   const { user } = useContext(AuthContext);
 
   const { data } = useFetchTempEmpList({ userCode: user.userCode });
-
-  // Columns Definition
   const columns = [
     {
       title: "ID",
@@ -33,8 +31,8 @@ const TempEmployeeList = () => {
     },
     {
       title: "Section",
-      dataIndex: "empId",
-      key: "empId",
+      dataIndex: "campusLocation",
+      key: "campusLocation",
     },
   ];
 
@@ -56,7 +54,8 @@ const TempEmployeeList = () => {
         dataSource={data}
         columns={columns}
         rowKey="grNumber"
-        pagination={{ pageSize: 10 }}
+        tableOnly
+        pagination={false}
       />
     </Widget>
   );

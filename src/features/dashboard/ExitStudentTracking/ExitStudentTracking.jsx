@@ -12,7 +12,6 @@ const ExitStudentTracking = () => {
 
   const { data } = useExitStudentsList({ campusId: user.campusId });
 
-  // Columns Definition
   const columns = [
     {
       title: "GR Number",
@@ -54,7 +53,7 @@ const ExitStudentTracking = () => {
       title={"Exit Students List"}
       styles={{
         body: {
-          maxHeight: "250px",
+          maxHeight: "300px",
           overflow: "auto",
         },
       }}
@@ -64,9 +63,7 @@ const ExitStudentTracking = () => {
         columns={columns}
         rowKey="grNumber"
         size="small"
-        // bordered
         pagination={{ pageSize: 10 }}
-        // tableLayout="fixed"
       />
     </Widget>
   );

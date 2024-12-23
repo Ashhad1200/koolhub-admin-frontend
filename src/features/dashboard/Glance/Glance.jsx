@@ -73,9 +73,10 @@ const DefaultTimeLineItem = ({ timeLine }) => {
 //     description: "Meeting with Jane Doe to discuss the new project.",
 //   },
 // ];
+
 const Glance = () => {
   const { data: glanceMeetings } = useGlanceMeetings({
-    date: "2018-02-10",
+    date: "2018-02-10", 
     // date: dt.toShortDateString(
     //   dt.toLocal(),
     //   dt.formats.YearMonthDateDashed
